@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case 01</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        overflow: hidden;
+      }
+      .quadrant {
+        width: 50vw;
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+      }
+      .top-left {
+        background-color: red;
+      }
+      .top-right {
+        background-color: green;
+      }
+      .bottom-left {
+        background-color: orange;
+      }
+      .bottom-right {
+        background-color: rgb(199, 11, 174);
+      }
+      .corner-circle {
+        width: 20vw;
+        height: 20vw;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .top-left .corner-circle {
+        top: -10vw;
+        left: -10vw;
+      }
+      .top-right .corner-circle {
+        top: -10vw;
+        right: -10vw;
+      }
+      .bottom-left .corner-circle {
+        bottom: -10vw;
+        left: -10vw;
+      }
+      .bottom-right .corner-circle {
+        bottom: -10vw;
+        right: -10vw;
+      }
+      .top-mid .corner-circle {
+        top: -10vw;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .bottom-mid .corner-circle {
+        bottom: -10vw;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .circle {
+        width: 30vh;
+        height: 30vh;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .square {
+        width: 10vh;
+        height: 10vh;
+        background-color: red;
+      }
+      .center-square {
+        width: 15vh;
+        height: 15vh;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .center-circle {
+        width: 8vh;
+        height: 8vh;
+        background-color: red;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quadrant top-left">
+      <div class="corner-circle"></div>
+      <div class="circle"><div class="square"></div></div>
+    </div>
+    <div class="quadrant top-right">
+      <div class="corner-circle"></div>
+      <div class="circle"><div class="square"></div></div>
+    </div>
+    <div class="quadrant bottom-left">
+      <div class="corner-circle"></div>
+      <div class="circle"><div class="square"></div></div>
+    </div>
+    <div class="quadrant bottom-right">
+      <div class="corner-circle"></div>
+      <div class="circle"><div class="square"></div></div>
+    </div>
+    <div class="center-square">
+      <div class="center-circle"></div>
+    </div>
+    <div class="top-mid">
+      <div class="corner-circle"></div>
+    </div>
+    <div class="bottom-mid">
+      <div class="corner-circle"></div>
+    </div>
+  </body>
+</html>
