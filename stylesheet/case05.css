@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+  }
+  .red {
+    background-color: red;
+  }
+  .green {
+    background-color: green;
+  }
+  .orange {
+    background-color: #fc7703;
+  }
+  .purple {
+    background-color: purple;
+  }
+  .pink {
+    background-color: #bf28a9;
+  }
+  .blue {
+    background-color: blue;
+  }
+  .brown {
+    background-color: brown;
+  }
+  .lightpink {
+    background-color: #b073de;
+  }
+  .darkpurple {
+    background-color: indigo;
+  }
+  .yellow {
+    background-color: yellow;
+    color: black;
+  }
+  .gray {
+    background-color: gray;
+  }
+  .cyan {
+    background-color: cyan;
+  }
+
+  .box1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .box2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .box3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .box4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+  .box5 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .box6 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .box7 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .box8 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+  .box9 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .box10 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .box11 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+  .box12 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+  }
